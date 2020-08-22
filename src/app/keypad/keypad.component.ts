@@ -30,8 +30,9 @@ export class KeypadComponent implements OnInit, OnDestroy {
       this.onClickNumKeys(key);
     } else {
       switch (key) {
-        case '*':
         case '/':
+          event.preventDefault();
+        case '*':
         case '-':
         case '+':
         case '=':

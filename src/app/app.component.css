@@ -1,0 +1,6 @@
+.calculator {
+  font: 100 14px 'Roboto';
+  margin: auto;
+  width: min(100vmin, 400px);
+  font-size: min(4vmin, 20px);
+}

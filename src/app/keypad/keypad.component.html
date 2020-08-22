@@ -1,0 +1,27 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<div class="keypad" (keydown.enter)="$event.preventDefault()">
+  <button class="misc-key" (click)="onClickClear()">{{clearSymbol}}</button>
+  <button class="misc-key" (click)="onClickInvert()">±</button>
+  <button class="misc-key" (click)="onClickPercent()">%</button>
+  <button class="operation-key" (click)="onClickOperation('/')">÷</button>
+  <br>
+  <button (click)="onClickNumKeys('7')">7</button>
+  <button (click)="onClickNumKeys('8')">8</button>
+  <button (click)="onClickNumKeys('9')">9</button>
+  <button class="operation-key" (click)="onClickOperation('*')">×</button>
+  <br>
+  <button (click)="onClickNumKeys('4')">4</button>
+  <button (click)="onClickNumKeys('5')">5</button>
+  <button (click)="onClickNumKeys('6')">6</button>
+  <button class="operation-key" (click)="onClickOperation('-')">-</button>
+  <br>
+  <button (click)="onClickNumKeys('1')">1</button>
+  <button (click)="onClickNumKeys('2')">2</button>
+  <button (click)="onClickNumKeys('3')">3</button>
+  <button class="operation-key" (click)="onClickOperation('+')">+</button>
+  <br>
+  <button class="zero bottom" (click)="onClickNumKeys('0')">0</button>
+  <button class="bottom" (click)="onClickNumKeys('.')">.</button>
+  <button class="operation-key bottom" (click)="onClickOperation('=')">=</button>
+</div>

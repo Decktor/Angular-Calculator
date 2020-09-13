@@ -9,12 +9,12 @@ button {
   margin: 0%;
   outline: none;
   width: 25%;
-  height: min(22.5vmin, 100px, 15vh);
+  height: min(22.5vw, 100px, 15vh);
   border: 0px;
   border-bottom: rgb(163, 156, 156) 1px solid;
   border-right: rgb(163, 156, 156) 1px solid;
   font: 100 14px 'Roboto';
-  font-size: min(5vmin, 22.5px, 4.5vh);
+  font-size: min(5vw, 22.5px, 4.5vh);
 }
 
 button:active {

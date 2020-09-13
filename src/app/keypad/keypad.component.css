@@ -15,6 +15,7 @@ button {
   border-right: rgb(163, 156, 156) 1px solid;
   font: 100 14px 'Roboto';
   font-size: min(5vw, 22.5px, 4.5vh);
+  background-color: #efefef;
 }
 
 button:active {

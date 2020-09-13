@@ -21,18 +21,6 @@ export class DisplayComponent implements OnInit, OnDestroy {
     });
   }
 
-  getFontSize() {
-    let size = 75;
-    if (this.currentNum.length > 10) {
-      size *= 10 / (this.currentNum.length * .95)
-    }
-    return size;
-  }
-
-  getLineHeight() {
-    return 120/this.getFontSize();
-  }
-
   ngOnDestroy() {
     this.currentNumSubscription.unsubscribe();
   }

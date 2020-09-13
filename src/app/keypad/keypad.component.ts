@@ -42,6 +42,7 @@ export class KeypadComponent implements OnInit, OnDestroy {
           this.onClickClear();
           break;
         case 'Backspace':
+          event.preventDefault();
           this.onBackSpace();
           break;
         case 'Enter':

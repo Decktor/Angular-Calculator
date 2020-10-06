@@ -62,7 +62,11 @@ export class KeypadComponent implements OnInit, OnDestroy {
   }
 
   onClickClear() {
-    this.calcService.clear();
+    if (this.clearSymbol === 'AC') {
+      this.calcService.clearAll();
+    } else {
+      this.calcService.clearCurrentNum();
+    }
   }
 
   onBackSpace() {

@@ -34,11 +34,16 @@ export class CalcService {
     this.broadCastNumber();
   }
 
-  clear() {
+  clearAll() {
     this._currentNumberString = '0';
     this._lastNum = 0;
     this._currentOperation = '';
     this._isFirstDigit = true;
+    this.broadCastNumber();
+  }
+
+  clearCurrentNum() {
+    this._currentNumberString = '0';
     this.broadCastNumber();
   }
 
